@@ -95,6 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header h1 {
+  font-size: 3em;
+}
 
 html {
   background-color: black;
@@ -108,15 +118,32 @@ body {
   height: 100%;
 }
 
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #555;
+}
+
+main p {
+  font-size: 1.35em;
+  padding-bottom: 20px;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
 
 }
 
+footer {
+  border-top: 1px solid #555;
+
+}
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -126,20 +153,28 @@ body {
   line-height: 1.5em;
   font-size: 1em;
   background-color: black;
-  height: 250px;
   width: 30%;
   justify-content: center;
   align-items: center;
+  float: left;
 
 }
 
- .div-1, .div-2 {
+ .div-2 {
+      border-left: 1px solid #555;
       border-right: 1px solid #555;
-      padding-right: 30px;
+      padding: 0 40px;
 
     }
 
+footer ul {
+  list-style: none;
+ }
 
+footer li {
+  display: inline-block;
+  padding: 20px 20px 0 0;
+}
 
 
 
